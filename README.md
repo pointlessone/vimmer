@@ -27,7 +27,7 @@ We've listed out a set of features below to implement. We suggest you do them in
 
 ## Setup
 
-1. Git clone ______
+1. Git clone https://github.com/johnli611/vimmer.git
 2. yarn install (install yarn if you haven't yet)
 3. bundle install (you may have to update your Ruby version, or change the version in Gemfile to suit your system)
 4. Run both the front-end and back-end with `rails server`, and go to localhost:3000 in your browser

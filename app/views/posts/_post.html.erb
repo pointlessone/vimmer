@@ -1,0 +1,8 @@
+<div class="post">
+  <div>
+    By <%= link_to "@#{post.user.username}", short_user_url(post.user.username) %>,
+    <%= link_to post.created_at, short_post_url(post.user.username, post) %>
+  <div class="body">
+    <%= post.body %>
+  </div>
+</div>

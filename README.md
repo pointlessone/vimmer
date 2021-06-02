@@ -25,6 +25,14 @@ We've listed out a set of features below to implement. We suggest you do them in
     2. Another user reposts one of their posts or reposts
     3. User has a new follower
 
+## Setup
+
+1. Git clone ______
+2. yarn install (install yarn if you haven't yet)
+3. bundle install (you may have to update your Ruby version, or change the version in Gemfile to suit your system)
+4. Run both the front-end and back-end with `rails server`, and go to localhost:3000 in your browser
+5. Make front-end changes starting with the `hello_react.jsx` file, which currently displays a Hello World message 
+
 ## Rubric
 
 You will be graded on the following (in order of priority):

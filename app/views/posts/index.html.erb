@@ -1,7 +1,3 @@
 <h1>Posts</h1>
 
-<%- if user_signed_in? && current_user.username == params[:username] %>
-  <%= render 'form', post: @new_post %>
-<%- end %>
-
 <%= render partial: 'posts/post', collection: @posts %>

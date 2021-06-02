@@ -3,7 +3,6 @@ class PostsController < ApplicationController
 
   def index
     @posts = posts_scope
-    @new_post = posts_scope.build
   end
 
   def show

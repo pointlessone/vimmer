@@ -1,0 +1,16 @@
+<%- if user_signed_in? && current_user != @user %>
+  <% if @following %>
+    <%= link_to 'Unfollow', following_path(@following), method: :delete %>
+  <%- else %>
+    <%= link_to 'Follow', followings_path(following: { follower_id: current_user.id, followed_id: @user.id }), method: :post %>
+  <%- end %>
+<%- end %>
+
+<h1>Posts</h1>
+
+<%- if user_signed_in? && current_user == @user %>
+  <%= render 'posts/form', post: @new_post %>
+<%- end %>
+
+<%= render partial: 'posts/post', collection: @posts %>
+

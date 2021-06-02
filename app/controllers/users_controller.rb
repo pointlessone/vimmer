@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   def show
     @user = user
     @posts = user.posts
-    @new_post = current_user.posts.build
 
     if current_user != @user
       @following = current_user.followings.find_by(followed_id: @user.id)

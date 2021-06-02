@@ -1,1 +1,7 @@
 <h1>Welcome to Vimmer</h1>
+
+<%- if user_signed_in? %>
+  <%= render 'posts/form', post: @new_post %>
+
+  <%= render partial: 'posts/post', collection: @posts %>
+<%- end %>
